@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "564AEC23541C30F673AE3430B7518923",
+  "keywordClasses": [
+    {
+      "name": "webAutomation.Demo",
+      "keywordMethods": [
+        {
+          "name": "searchForApplication",
+          "parameters": [
+            {
+              "name": "searchText",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
