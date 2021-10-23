@@ -30,51 +30,50 @@ public class sample {
 	@Keyword
 	def searchForApplication(def searchText) {
 		actions.sendKeys(findTestObject('Object Repository/searchBox'), searchText);
-				
+
 		actions.click(findTestObject('Object Repository/searchbutton'));
 	}
-	
+
 	@Keyword
-	def clickOnApplicationUrl()
-	{
+	def clickOnApplicationUrl() {
 		actions.click(findTestObject('Object Repository/appUrl'));
 	}
-	
+
 	@Keyword
-	def clickOnContact()
-	{
+	def clickOnContact() {
 		actions.click(findTestObject('Object Repository/contactButton'));
 	}
-	
+
 	@Keyword
-	def fillTheDetails(def name, def email, def number, def companyName)
-	{
-	enterName(name);
-	enterEmail(email);
-	enterContact(number);
-	enterCompanyName(companyName);
+	def fillTheDetails(def name, def email, def number, def companyName) {
+		enterName(name);
+		enterEmail(email);
+		enterContact(number);
+		enterCompanyName(companyName);
 	}
-	
+
 	@Keyword
-	def enterName(def name)
-	{
+	def enterName(def name) {
 		actions.sendKeys(findTestObject('Object Repository/nameField'), name);
 	}
-	
+
 	@Keyword
-	def enterEmail(def email)
-	{
+	def enterEmail(def email) {
 		actions.sendKeys(findTestObject('Object Repository/emailField'), email);
 	}
 	@Keyword
-	def enterContact(def number)
-	{
+	def enterContact(def number) {
 		actions.sendKeys(findTestObject('Object Repository/contactNumber'), number);
+	}
+
+	@Keyword
+	def enterCompanyName(def companyName) {
+		actions.sendKeys(findTestObject('Object Repository/companyName'), companyName);
 	}
 	
 	@Keyword
-	def enterCompanyName(def companyName)
-	{
-		actions.sendKeys(findTestObject('Object Repository/companyName'), companyName);
+	def clickOnYesTellUsMore() {
+		actions.click(findTestObject('Object Repository/submitTheForm'));
+		verifications.verifyElementPresent(findTestObject('Object Repository/confirmMessage'), "The form not submitted successfullly");
 	}
 }

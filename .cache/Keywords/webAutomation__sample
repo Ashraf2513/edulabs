@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "CF1D13246902B92AD255B5742D26801F",
+  "keywordFileContentHash": "D40F23D12454B9E8C26ED58369D367B4",
   "keywordClasses": [
     {
       "name": "webAutomation.sample",
@@ -165,6 +165,11 @@
               }
             }
           ],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnYesTellUsMore",
+          "parameters": [],
           "javadoc": ""
         }
       ]
