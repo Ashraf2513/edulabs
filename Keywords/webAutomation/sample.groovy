@@ -70,7 +70,7 @@ public class sample {
 	def enterCompanyName(def companyName) {
 		actions.sendKeys(findTestObject('Object Repository/companyName'), companyName);
 	}
-	
+
 	@Keyword
 	def clickOnYesTellUsMore() {
 		actions.click(findTestObject('Object Repository/submitTheForm'));

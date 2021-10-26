@@ -24,8 +24,7 @@ def number= "9902010291"
 def companyName="abc private limited";
 
 CustomKeywords.'webAutomation.sample.searchForApplication'(searchText);
-CustomKeywords.'webAutomation.sample.clickOnApplicationUrl'();
-CustomKeywords.'webAutomation.sample.clickOnContact'();
+CustomKeywords.'webAutomation.sample.clickOnApplicationUrl'()
+CustomKeywords.'webAutomation.sample.clickOnContact'()
 CustomKeywords.'webAutomation.sample.fillTheDetails'(name,email,number,companyName);
-CustomKeywords.'webAutomation.sample.clickOnYesTellUsMore'();
-WebUI.delay(5)
+//CustomKeywords.'webAutomation.sample.clickOnYesTellUsMore'();
